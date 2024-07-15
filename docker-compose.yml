@@ -19,6 +19,7 @@ services:
   nginx:
     image: nginx:1.21-alpine
     container_name: "mini-hackathon-weather-nginx"
+    restart: always
     ports:
       - "80:80"
       - "443:443"

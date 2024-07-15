@@ -1,22 +1,24 @@
-Bitte erstelle eine Planung von Aktivitaeten in Abhaengigkeit des Orts, der Praeferenzen
+Bitte erstelle eine Planung von Aktivitäten in Abhängigkeit des Orts, der Präferenzen
 und des Wetters fuer den folgenden Tag:
 
 - datum: {{ advice.for_date }}
 
 
-Die Relevanten Wetterinformationen erhaeltst du hier:
+Die Relevanten Wetterinformationen erhältst du hier:
 {% for entity in weather_series %}
 - {{ entity.dt }}: {{ entity.get_wmo_weather_code_display }} bei einer Temperatur von {{ entity.temperature }} Grad Celsius
 {% endfor %}
 
 {% if activities %}
-Folgende Aktivitaeten sind bereits geplant:
+Folgende Aktivitäten sind bereits geplant:
 {% for activity in activities %}
 - {{ activity.for_date }}: {{ activity.advise }}
 {% endfor %}
 {% endif %}
 
-Bitte gehe ausdruecklich nicht auf Folgeaktivitaeten ein!
-Diese werden als naechstes von dir geplant.
+Bitte gehe ausdrücklich nicht auf Folgeaktivitäten ein!
+Diese werden als nächstes von dir geplant.
+
+Und versuche bei besonderen Attraktionen Duplikate zu vermeiden.
 
 Es werden auch keine Anpassungen gemacht. Die Antwort, die du gibst, ist nicht interaktiv!

@@ -4,5 +4,5 @@ Eine Person plant eine Reise. Hier die Reisedetails:
 - Ankunft: {{ trip.start_date }} ({{ trip.start_date|date:"l" }})
 - Reisedauer: {{ trip.duration }} Tag(e)
 
-Der Kunde hat folgende Praeferenzen Angegeben:
+Der Kunde hat folgende Präferenzen Angegeben:
 {{ trip.preferences }}

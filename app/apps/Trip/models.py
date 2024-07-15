@@ -215,6 +215,11 @@ class TripAdviseManager(models.Manager):
             },
         )
 
+    def _get_output_prompt(self):
+        return loader.render_to_string(
+            template_name="prompts/output_prompt.txt",
+        )
+
     def _perform_prompt(self, payload: dict):
         response = requests.post(
             "https://api.openai.com/v1/chat/completions",
@@ -259,6 +264,10 @@ class TripAdviseManager(models.Manager):
                 {
                     "role": "system",
                     "content": day_prompt,
+                },
+                {
+                    "role": "system",
+                    "content": self._get_output_prompt(),
                 },
             ],
         }

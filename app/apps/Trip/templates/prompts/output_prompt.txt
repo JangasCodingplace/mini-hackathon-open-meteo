@@ -1,0 +1,2 @@
+Erstelle unbedingt eine Markdownfreundliche Ausgabe!
+Und nutze für die ganze Ausgabe ein Deutsches Format (inkl. Uhrzeiten)

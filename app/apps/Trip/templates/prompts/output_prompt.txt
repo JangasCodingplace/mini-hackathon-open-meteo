@@ -1,3 +1,4 @@
-Halte deinen Output simepel.
-In Markdown Konverntionen sind Stichpunkte und fette Schrift erlaubt.
-Überschriften, Links, oder anderes nicht. Halte deine Ausgabe simpel!
+Halte deinen Output simepel. Du darfst gerne viele Vorschläge machen, aber nutze nicht
+zu viele Text Formatierungen.
+In Markdown Konventionen sind Stichpunkte und fette Schrift erlaubt.
+Überschriften, Links, oder anderes nicht!

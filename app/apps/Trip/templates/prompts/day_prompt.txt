@@ -1,0 +1,22 @@
+Bitte erstelle eine Planung von Aktivitaeten in Abhaengigkeit des Orts, der Praeferenzen
+und des Wetters fuer den folgenden Tag:
+
+- datum: {{ advice.for_date }}
+
+
+Die Relevanten Wetterinformationen erhaeltst du hier:
+{% for entity in weather_series %}
+- {{ entity.dt }}: {{ entity.get_wmo_weather_code_display }} bei einer Temperatur von {{ entity.temperature }} Grad Celsius
+{% endfor %}
+
+{% if activities %}
+Folgende Aktivitaeten sind bereits geplant:
+{% for activity in activities %}
+- {{ activity.for_date }}: {{ activity.advise }}
+{% endfor %}
+{% endif %}
+
+Bitte gehe ausdruecklich nicht auf Folgeaktivitaeten ein!
+Diese werden als naechstes von dir geplant.
+
+Es werden auch keine Anpassungen gemacht. Die Antwort, die du gibst, ist nicht interaktiv!

@@ -1,0 +1,7 @@
+Bitte sprich in Abhaengigkeit der Aktivitaeten, des Orts, der Praeferenzen und des Wetters
+Empfehlungen fuer geeignete Kleidung aus.
+
+Aktivitaeten:
+{% for activity in activities %}
+{{activity.date}}: {{activity.description}}
+{% endfor %}

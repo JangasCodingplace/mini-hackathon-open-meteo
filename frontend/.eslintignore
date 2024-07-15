@@ -1,0 +1,7 @@
+package.json
+package-lock.json
+*.json
+*.md
+/public
+src/index.tsx
+.conf

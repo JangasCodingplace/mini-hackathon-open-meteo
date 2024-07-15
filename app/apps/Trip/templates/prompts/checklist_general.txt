@@ -1,0 +1,7 @@
+Bitte sprich in Abhaengigkeit der Aktivitaeten, des Orts, der Praeferenzen
+Empfehlungen fuer eine moegliche Checkliste aus.
+
+Aktivitaeten:
+{% for activity in activities %}
+{{activity.date}}: {{activity.description}}
+{% endfor %}

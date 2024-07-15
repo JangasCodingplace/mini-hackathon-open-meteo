@@ -1,0 +1,8 @@
+Eine Person plant eine Reise. Hier die Reisedetails:
+
+- Reiseziel: {{ trip.destination.location.country }}, {{ trip.destination.location.city }}
+- Ankunft: {{ trip.start_date }} ({{ trip.start_date|date:"l" }})
+- Reisedauer: {{ trip.duration }} Tag(e)
+
+Der Kunde hat folgende Praeferenzen Angegeben:
+{{ trip.preferences }}

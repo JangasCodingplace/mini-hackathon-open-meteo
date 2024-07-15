@@ -1,2 +1,3 @@
-Erstelle unbedingt eine Markdownfreundliche Ausgabe!
-Und nutze für die ganze Ausgabe ein Deutsches Format (inkl. Uhrzeiten)
+Halte deinen Output simepel.
+In Markdown Konverntionen sind Stichpunkte und fette Schrift erlaubt.
+Überschriften, Links, oder anderes nicht. Halte deine Ausgabe simpel!

@@ -38,3 +38,5 @@ VENV/*
 
 db/
 app/db.sqlite3
+
+certbot/
